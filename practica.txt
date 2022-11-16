@@ -1,0 +1,29 @@
+preguntas 
+PRIMERO IMPORTAR LIBRERIAS (PANDAS as pd, NUMPYas np, DATETIME as dt)
+SEGUNDO IMPORTAR EL ARCHIVO
+ACUERDENSE DE GUARDAR LAS RESPUESTAS DENTRO DE VARIABLES POR EJEMPLO:
+RESPUESTA1= df.sum()
+1) Esta función debe informar la cantidad de registros de la columna country que sean Turkey retornando ese valor en un dato de tipo entero.
+2) Esta función debe eliminar la columna 'fullvisitorID' y luego informar la cantidad de columnas
+    retornando ese valor en un dato de tipo entero    
+3)Esta función debe informar la cantidad de registros sin tener en cuenta aquellos con valores faltantes
+    retornando ese valor en un dato de tipo entero.
+4) Las pageviews son las paginas que visito el usuario que ingreso a la pagina si por error ingreso a la pagina y salio rapidamente se registra como nana.
+La columna TimeOnSite remite al tiempo que estuvo la persona en la pagina. Crear una nueva columna que se llame 'RealTime? que multiplique las dos columnas anteriores y nos el el tiempo real de paginas visitadas (pista reemplezar los nan por cero puesto que si multiplicamos nan por algun n° nos va a dar error)
+5)Informar el navegador(browser) con mayor cantidad de transacctions del pais 'United States'
+6)Esta función debe informar cuál de la siguiente lista de países tuvo mayor cantidad de transactions de
+    energía solar (Solar_Generation_TWh) en el año 2017:
+        * Germany
+        * Japan
+        * France
+        * United Kingdom
+        * India
+        * United States
+        * Spain
+    Debe retornar el valor en un dato de tipo string.
+(pista: primero castear la columna date al tipo de dato datetime, buscar la funcion pd.to_datetime)
+7)Esta función debe informar la cantidad de paises (country) diferentes que están presentes en el dataset retornando ese valor en un dato de tipo entero.
+8)Esta función debe informar el score promedio de las columnas transactions agrupado por pais en formato tupla y redondeado a dos decimales:
+    Ejemplo:    Si el score promedio femenino te da = 102.358 devolver 102.36
+                Si el score promedio masculino te da = 102.023 devolver 102.02
+Pista: funcion groupby
